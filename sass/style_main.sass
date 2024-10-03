@@ -1,24 +1,21 @@
 /* чтобы все марджины и паддинги входили в состав размера нашего элемента, а не прибавлялись дополнительно к его размеру */
 *
     box-sizing: border-box
-    
+
 // Base Styles
-body 
+body
     font-family: Arial, sans-serif
     /* Центрируем весь контент */
     margin: 0 auto
-    max-width: 1400px  
+    max-width: 1400px
 
-    
 // Colors    
 $btn: #2F80ED
 $white: #FFFFFF
 $txt: #757575
 
-
-
 .container
-    max-width: 1360px 
+    max-width: 1360px
     color: $txt
 
 .reviews__title
@@ -28,22 +25,20 @@ $txt: #757575
 .reviews__wrapper
     margin-bottom: 2.7rem
 
-
 .reviews__item
     border-radius: 0.9rem
     box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5)
     max-width: 438px
-    height: auto 
+    height: auto
     padding: 31px 33px 38px 33px
 
-
 p
-    font-size: 1.25rem   
+    font-size: 1.25rem
 
-h4    
+h4
     font-size: 1.7rem
-   
-.reviews__item-score 
+
+.reviews__item-score
     display: inline-block
     background-color: #E0E0E0
     border-radius: 30px
@@ -54,8 +49,8 @@ h4
     font-size: 1.5rem
 
 .rewievs__item-photo
-    border-radius: 50px    
-    
+    border-radius: 50px
+
 .reviews__main-button
     border: none
     border-radius: 10px
@@ -64,7 +59,7 @@ h4
     padding: 26px 72px 26px 72px
     font-size: 1.7rem
     margin-bottom: 5.3rem
-    
+
 .roadmap
     max-width: 1360px
     height: auto
@@ -78,6 +73,49 @@ h4
 .communication__title
     position: absolute
     h4
-    color: $white    
+        color: $white
 
+        max-width: 1400px
 
+.rooms
+    color: rgba(67, 67, 67, 1)
+    background-color: rgb(255, 255, 255)
+    line-height: 110%
+    padding-bottom: 30px
+    & .rooms_title
+        padding-bottom: 48px
+        padding-top: 56px
+    & .room_card
+        color: rgba(85, 85, 85, 1)
+        background-color: white
+        box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
+        font-size: 20px
+        font-weight: medium
+        max-width: 323px
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    & .room_img
+        max-width: 323px
+        max-height: 229px
+        background-image: url("/assets/img/room.jpg")
+        background-size: cover
+    & .room_about
+        padding-left: 21px
+        padding-top: 22px
+        max-width: 275px
+    & .price
+        display: flex
+        align-items: baseline
+        padding-bottom: 39px
+        padding-top: 37px
+    & .room_price
+        color: rgba(45, 156, 219, 1)
+        font-weight: 600
+        font-size: 37px
+        padding-right: 7px
+    & .room_time
+        color: rgba(152, 152, 152, 1)
+        font-weight: 500
+        font-size: 18px

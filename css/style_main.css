@@ -43,7 +43,7 @@ h4 {
 
 .reviews__item-score {
   display: inline-block;
-  background-color: #e0e0e0;
+  background-color: #E0E0E0;
   border-radius: 30px;
   width: 7.8rem;
   padding: 9px 12px 8px 12px;
@@ -60,8 +60,8 @@ h4 {
 .reviews__main-button {
   border: none;
   border-radius: 10px;
-  background-color: #2f80ed;
-  color: #ffffff;
+  background-color: #2F80ED;
+  color: #FFFFFF;
   padding: 26px 72px 26px 72px;
   font-size: 1.7rem;
   margin-bottom: 5.3rem;
@@ -81,5 +81,59 @@ h4 {
 
 .communication__title {
   position: absolute;
-  color: #ffffff;
+}
+.communication__title h4 {
+  color: #FFFFFF;
+  max-width: 1400px;
+}
+
+.rooms {
+  color: rgb(67, 67, 67);
+  background-color: rgb(255, 255, 255);
+  line-height: 110%;
+  padding-bottom: 30px;
+}
+.rooms .rooms_title {
+  padding-bottom: 48px;
+  padding-top: 56px;
+}
+.rooms .room_card {
+  color: rgb(85, 85, 85);
+  background-color: white;
+  box-shadow: 0px 20px 40px 10px rgb(237, 237, 237);
+  font-size: 20px;
+  font-weight: medium;
+  max-width: 323px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rooms .room_img {
+  max-width: 323px;
+  max-height: 229px;
+  background-image: url("/assets/img/room.jpg");
+  background-size: cover;
+}
+.rooms .room_about {
+  padding-left: 21px;
+  padding-top: 22px;
+  max-width: 275px;
+}
+.rooms .price {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 39px;
+  padding-top: 37px;
+}
+.rooms .room_price {
+  color: rgb(45, 156, 219);
+  font-weight: 600;
+  font-size: 37px;
+  padding-right: 7px;
+}
+.rooms .room_time {
+  color: rgb(152, 152, 152);
+  font-weight: 500;
+  font-size: 18px;
 }
