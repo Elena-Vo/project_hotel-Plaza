@@ -169,3 +169,64 @@ h4 {
   font-weight: 500;
   font-size: 18px;
 }
+
+.rest {
+  color: #434343;
+  background-color: rgb(255, 255, 255);
+  line-height: 110%;
+  padding-bottom: 3.125rem;
+}
+.rest .rest__title__text {
+  font-weight: 500;
+  font-size: 3.125rem;
+  margin: 0;
+  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+}
+.rest .rest__img-box {
+  max-width: 1360px;
+  max-height: 726px;
+  display: grid;
+  grid-template-columns: 434px 441px 441px;
+  gap: 1.25rem;
+}
+.rest .filter-box-img1 {
+  position: relative;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.rest .filter-box-img2 {
+  position: relative;
+}
+.rest .filter-box-img3 {
+  position: relative;
+}
+.rest .filter-box-img4 {
+  position: relative;
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+.rest .rest__img-box__img-filter {
+  color: #FFFFFF;
+  opacity: 0;
+  line-height: 110%;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+}
+.rest .rest__img-box__img-filter:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.rest .img-filter-text {
+  max-width: 340px;
+}
