@@ -73,18 +73,50 @@ h4 {
   border-radius: 20px;
 }
 
-.communications__box {
+.communication {
+  position: relative;
+}
+
+.communication__box {
   position: relative;
   max-width: 1360px;
   height: auto;
 }
 
-.communication__title {
+.communication__item {
   position: absolute;
+  top: 60%;
+  left: 4rem;
 }
-.communication__title h4 {
+
+.communication__title {
   color: #FFFFFF;
-  max-width: 1400px;
+  font-size: 3rem;
+}
+
+.communication__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.communication__button {
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(238, 238, 238, 0.32);
+  color: #FFFFFF;
+}
+
+.phone {
+  background-color: #2F80ED;
+  border-radius: 50px;
+  width: 82px;
+  height: 82px;
+  display: inline-block;
+  padding: 24px 22px 23px 21px;
+}
+
+.communication__buttons-box {
+  display: flex;
 }
 
 .rooms {
