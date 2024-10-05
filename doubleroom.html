@@ -8,13 +8,69 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style_droom.css" />
+    <!-- Подключение Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Подключение нашего листа со стилями -->
+    <link rel="stylesheet" href="css/style_main.css" />
     
   </head>
 
   <body>
      <!-- Header -->
      <header class="header">
-      <div class="container">
+        <div class="container d-flex justify-content-between align-items-start"></div>
+        <div class="main-content">
+        <!-- Заголовок -->
+        <h1>Двухкомнатный номер в Апарт-отеле «SkyPlazaYalta»</h1>
+        <!-- Основное изображение -->
+        <img src="assets/img/images_main-room.png" alt="Основной вид номера" width="899" height="515" >
+        </div>
+     </header>
+     <!-- Slider -->
+    <section class="slider-section container my-4">
+        <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/room_slide1.png" class="d-block w-100" alt="Фото 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/room_slide2.png" class="d-block w-100" alt="Фото 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/room_slide3.png" class="d-block w-100" alt="Фото 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+  
+          <!-- Блок с телефонами и кнопками справа -->
+          <div class="col-lg-5">
+            <!-- Блок с телефонами -->
+            <div class="contact-block" style="background-color: #fff; padding: 20px; max-width: 300px;">
+                <p><strong>Телефон 1:</strong> +7 (123) 456-78-90</p>
+                <p><strong>Телефон 2:</strong> +7 (098) 765-43-21</p>
+                <button class="btn btn-primary mb-3">Оставить заявку</button>
+  
+             <!-- Блок с датой заезда и выезда -->
+        <div class="booking-block">
+            <button class="btn btn-outline-secondary mb-2">Дата заезда и выезда</button>
+            <button class="btn btn-outline-secondary mb-2">2 взрослых, 2 детей</button>
+            <button class="btn btn-primary">Узнать цены</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+        </div>
           <nav class="menu">
               <ul>
                   <li><a href="#">Home</a></li>
@@ -28,7 +84,6 @@
               </div>
           </nav>
       </div>
-  </header>
 
   
   </body>
