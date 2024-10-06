@@ -4,11 +4,30 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Medium.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Regular.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   /* Центрируем весь контент */
   margin: 0 auto;
-  max-width: 1400px;
+  min-width: 360px;
+  background-color: #F5F5F5;
 }
 
 .container {
@@ -150,8 +169,7 @@ iframe {
   border: none;
   background-color: rgba(238, 238, 238, 0.32);
   color: #FFFFFF;
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   padding-left: 0px;
   width: 20.4rem;
   display: flex;
