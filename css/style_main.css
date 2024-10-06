@@ -51,7 +51,7 @@ h4 {
   padding: 9px 21px 8px 12px;
   margin-bottom: 1.6rem;
   justify-content: space-between;
-  align-item: center;
+  align-items: center;
 }
 
 .reviews__item-score_value {
@@ -97,20 +97,24 @@ h4 {
 .roadmap {
   max-width: 1360px;
   height: auto;
-  border-radius: 20px;
   position: relative;
-  display: block;
 }
-
+.roadmap__wrapper {
+  max-width: 1360px;
+  height: auto;
+}
 .roadmap__box {
   position: absolute;
-  display: block;
   top: 40%;
   left: 61%;
   background-color: #FFFFFF;
   border-radius: 50px 0 20px 0;
   padding-top: 44px;
   padding-left: 50px;
+}
+
+iframe {
+  border-radius: 20px;
 }
 
 .communication {
