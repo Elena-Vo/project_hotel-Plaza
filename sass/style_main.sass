@@ -28,6 +28,7 @@ body
     margin: 0 auto
     min-width: 360px
     background-color: #F5F5F5
+    font-weight: 400
 
 // Colors    
 $btn: #2F80ED
@@ -42,24 +43,29 @@ $txt: #757575
     font-size: 3rem
     margin-bottom: 2.7rem
     margin-left: 2.5rem
+    line-height: 1.1
 
 .reviews__wrapper
     margin-bottom: 2.7rem
     margin-left: 2.5rem
 
 .reviews__item
+    background-color: $white
     border-radius: 0.9rem
     box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5)
     max-width: 438px
     height: auto
     padding: 1.9rem 2rem 2.4rem 2rem
-    
-    
+ 
 p
     font-size: 1.25rem
+    line-height: 1.28
+    font-weight: 500
 
-h4
+h3
     font-size: 1.7rem
+    line-height: 1.28
+    letter-spacing: 0.02
 
 .reviews__item-score
     display: flex
@@ -73,10 +79,17 @@ h4
 
 .reviews__item-score_value
     font-size: 1.5rem
+    line-height: 1.25
+    letter-spacing: 0.22
+
+.reviews__item-name_data
+    letter-spacing: 0.02
 
 .reviews__item-button
     color: $btn
     font-size: 1.3rem
+    line-height: 1.28
+    letter-spacing: 0.02
     border: none
     padding-left: 0px
     margin-bottom: 2.8rem
@@ -92,81 +105,111 @@ h4
     border-radius: 50px
     margin-right: 1.3rem
 
+.reviews__main-button
+    font-size: 1.7rem
+
 .reviews__main-button, .roadmap__main-button
     border: none
     border-radius: 10px
     background-color: $btn
     color: $white
+    letter-spacing: 0.02
     padding: 26px 72px 26px 72px
-    font-size: 1.7rem
     margin-bottom: 5.3rem
     transition: 0.3s ease-in
+
     &:hover
         transform: scale(0.95)
-         
+
 .roadmap
     max-width: 1360px
     height: auto
     position: relative
+    margin-bottom: 5.3rem
+    overflow: hidden
+    border-radius: 20px
+
     &__wrapper
         max-width: 1360px
         height: auto
+        
     &__box
         position: absolute
         top: 40%
         left: 61%
         background-color: $white
-        border-radius: 50px 0 20px 0
+        border-radius: 50px 0px 20px 0px
         padding-top: 44px
         padding-left: 50px
+        max-width: 33rem
+        margin-right: 0.75rem
+
+    &__title
+        font-size: 2.6rem
+        line-height: 1.1
+        margin-bottom: 1rem
+
+    &__text
+        margin-bottom: 2.4rem
+
+    &__main-button
+    font-size: 1.6rem        
+        
 iframe
     border-radius: 20px
 
 .communication
-    position: relative
+    margin-bottom: 4.5rem
+
+    &__box
+        position: relative
+        max-width: 1360px
+        height: auto
+        overflow: hidden
         
-.communication__box
-    position: relative
-    max-width: 1360px
-    height: auto
-        
-.communication__item
-    position: absolute
-    top: 58%
-    left: 4rem
+    &__item
+        position: absolute
+        top: 58%
+        left: 4rem
   
-.communication__title
-    color: $white
-    font-size: 3rem
+    &__title
+        color: $white
+        font-size: 3rem
+        line-height: 1.1
+        margin-bottom: 1.9rem
       
-.communication__buttons
-    display: flex
-    justify-content: space-between
-    width: 63.7rem
-    margin-bottom: 2.4rem 
+    &__buttons
+        display: flex
+        justify-content: space-between
+        width: 63.7rem
+        margin-bottom: 2.4rem 
     
-.communication__button
-    border-radius: 50px
-    border: none
-    background-color: rgba(238, 238, 238, 0.32)
-    color: $white
-    backdrop-filter: blur(14px)
-    padding-left: 0px
-    width: 20.4rem
-    display: flex
-    align-items: center
-    font-size: 1.63rem
-    transition: 0.3s ease-in
-    &_tg
-        width: 19.6rem
-    &:hover
-        transform: scale(0.95)
+    &__button
+        border-radius: 50px
+        border: none
+        background-color: rgba(238, 238, 238, 0.32)
+        color: $white
+        backdrop-filter: blur(14px)
+        padding-left: 0px
+        width: 20.4rem
+        display: flex
+        align-items: center
+        font-size: 1.63rem
+        line-height: 1.1
+        transition: 0.3s ease-in
+        
+        &_tg
+                width: 19.6rem
+        
+        &:hover
+                transform: scale(0.95)
       
-.communication__button-logo
-    margin-right: 1.8rem
-    transition: 0.4s ease-in
-    &:active
-        transform: translate(15.15rem)
+    &__button-logo
+        margin-right: 1.8rem
+        transition: 0.4s ease-in
+        
+        &:active
+            transform: translate(15.15rem)
         
 .phone
     background-color: $btn
