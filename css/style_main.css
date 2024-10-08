@@ -438,3 +438,53 @@ iframe {
     margin-right: 0.7rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .roadmap {
+    position: static;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .roadmap__box {
+    position: static;
+    border-radius: 0px 0px 20px 20px;
+    max-width: 1384px;
+    margin-right: 0;
+  }
+  .roadmap__main-button {
+    margin-bottom: 1.5rem;
+  }
+  .communication__item {
+    top: 28%;
+    left: 2rem;
+  }
+  .communication__buttons {
+    width: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .communication__button {
+    color: transparent;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    margin-right: -4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .communication__item {
+    top: 2%;
+    left: 1rem;
+  }
+  .communication__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .communication__buttons {
+    margin-bottom: 1rem;
+  }
+  .communication__button {
+    color: transparent;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    margin-right: -6rem;
+  }
+}
