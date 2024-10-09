@@ -36,9 +36,69 @@ body
     background-color: $white
 
 // Main container
+    .header
+        color: #F5F5F5
+        padding: 0px
+
+    .menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0px
+
+        ul
+            display: flex
+            list-style: none
+            font-size: 1.06rem
+            font-weight: 400
+.menu_phone
+    padding-bottom: 10px
+
+.menu-tel
+    color: #2F80ED
+    font-size: 1.06rem
+
 .container
     max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
     color: $txt
+
+.info
+    background-color: white
+    box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
+    border-radius: 18px
+    width: 1360px
+    height: 385px
+    margin-bottom: 2rem:
+    &__text_card
+        width: 675px
+        height: 283px
+        padding: 10px
+        margin-left: 15px
+    &__title
+        font-size: 3.12rem
+        color: rgba(67, 67, 67, 1)
+        margin-bottom: 2rem
+    &__text
+        font-size: 1.25rem
+
+    &__picture
+        width: 573px
+        height: 385px
+        padding-right: 0px
+
+    &__wrapper
+        margin-bottom: 2.7rem
+    &__item
+        background-color: $white
+        border-radius: 0.9rem
+        filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+        max-width: 437px
+        height: auto
+        padding: 1.9rem 2rem 2.4rem 2rem
+    img
+        width: 100%
+        height: 385px
+        border-radius: 18px
 
 .reviews__title
     font-size: 3rem
@@ -403,41 +463,35 @@ iframe
     background-color: rgb(255, 255, 255)
     box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
     border-radius: 22px 22px 0px 0px
-
-.footer__wrapper
-    display: flex
-    justify-content: space-between
-    align-items: center
-
-.footer-items
-    display: flex
-    list-style: none
-
-.footer-menu
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-bottom: 1.4rem
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__items
+        display: flex
+        list-style: none
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 1.4rem
+    &__tel
+        color: #2F80ED
+        font-size: 2.12rem
+        padding-bottom: 4px
+        font-weight: 600
+    &__menu2
+        padding-bottom: 20px
 
     ul
         display: flex
         list-style: none
         padding: 0px
-
 a
     text-decoration: none
     color: rgba(90, 90, 90, 1)
 li
     margin: 15px
-
-.tel-footer
-    color: #2F80ED
-    font-size: 2.12rem
-    padding-bottom: 4px
-    font-weight: 600
-
-.footer-menu2
-    padding-bottom: 20px
 
 // Медиазапросы: от большего к меньшему, базовый вариант 1440-1920px, далее в соответствии с сеткой bootstrap //
 
