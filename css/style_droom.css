@@ -28,3 +28,29 @@ body {
   min-width: 360px;
   background-color: #F5F5F5;
 }
+
+.reviews__title {
+  font-size: 3rem;
+  margin-bottom: 2.7rem;
+}
+
+.contact .contact_block {
+  color: rgb(85, 85, 85);
+  background-color: white;
+  box-shadow: 0px 20px 40px 10px rgb(237, 237, 237);
+  font-size: 20px;
+  font-weight: medium;
+  max-width: 438px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    /* Flexbox для выравнивания по центру */
+    display: flex;
+    flex-direction: column; /* элементы располагаются по вертикали */
+    align-items: right; /* выравнивание по горизонтали */
+    justify-content: center; /* выравнивание по вертикали */
+    
+    /* Отступ сверху для карточки */
+    margin-top: 20px;
+}

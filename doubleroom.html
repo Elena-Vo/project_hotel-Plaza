@@ -6,26 +6,32 @@
     <title>HotelSkyPlazaYalta</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style_droom.css" />
     <!-- Подключение Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Подключение нашего листа со стилями -->
-    <link rel="stylesheet" href="css/style_main.css" />
+    <link rel="stylesheet" href="css/style_droom.css" />
     
   </head>
 
   <body>
      <!-- Header -->
-     <header class="header">
-        <div class="container d-flex justify-content-between align-items-start"></div>
-        <div class="main-content">
-        <!-- Заголовок -->
-        <h1>Двухкомнатный номер в Апарт-отеле «SkyPlazaYalta»</h1>
+     <!-- <header class="header">
+        <div class="container d-flex justify-content-start">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 mt-5">
+                Заголовок -->
+                <!-- <h1>Двухкомнатный номер в Апарт-отеле «SkyPlazaYalta»</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> -->
         <!-- Основное изображение -->
+         
         <img src="assets/img/images_main-room.png" alt="Основной вид номера" width="899" height="515" >
         </div>
-     </header>
+     
      <!-- Slider -->
     <section class="slider-section container my-4">
         <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -52,23 +58,38 @@
       </section>
 
   
-          <!-- Блок с телефонами и кнопками справа -->
-          <div class="col-lg-5">
+      <!-- Блок с телефонами и кнопками справа -->
+        <div class="container">
             <!-- Блок с телефонами -->
-            <div class="contact-block" style="background-color: #fff; padding: 20px; max-width: 300px;">
-                <p><strong>Телефон 1:</strong> +7 (123) 456-78-90</p>
-                <p><strong>Телефон 2:</strong> +7 (098) 765-43-21</p>
+             <div class="row">
+             <div class="col-12 col-lg-4 offset-lg-8">
+              <div class="contact">
+              <div class="contact_block">
+                <p> +7 (950) 477-73-15</p>
+                <p> +7 (910) 427-32-15</p>
                 <button class="btn btn-primary mb-3">Оставить заявку</button>
+              </div>
+              </div>
+             </div>
   
              <!-- Блок с датой заезда и выезда -->
-        <div class="booking-block">
-            <button class="btn btn-outline-secondary mb-2">Дата заезда и выезда</button>
-            <button class="btn btn-outline-secondary mb-2">2 взрослых, 2 детей</button>
-            <button class="btn btn-primary">Узнать цены</button>
+             <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-8">
+                  <div class="contact">
+                  <div class="contact_block">
+                      <button class="btn btn-primary mb-3">Дата заезда</button>
+                      <button class="btn btn-primary mb-3">Дата заезда и выезда</button>
+                      <button class="btn btn-outline-secondary mb-2">2 взрослых, 2 детей</button>
+                     <button class="btn btn-primary">Узнать цены</button>
+                  </div>
+              </div>
+        
+            
           </div>
         </div>
       </div>
-    </header>
+
   
         </div>
           <nav class="menu">
