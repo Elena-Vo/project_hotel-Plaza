@@ -20,6 +20,12 @@
     font-weight: 600
     font-style: normal
 
+// Colors  
+$btn: #2F80ED
+$white: #FFFFFF
+$txt: #757575
+
+
 // Base Styles
 body
     font-family: Arial, sans-serif
@@ -28,32 +34,12 @@ body
     min-width: 360px
     background-color: #F5F5F5
     font-weight: 400
-
-// Colors    
-$btn: #2F80ED
-$white: #FFFFFF
-$txt: #757575
+    background-color: $white
 
 // Main container
 .container
     max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
     color: $txt
-
-.reviews__title
-    font-size: 3rem
-    margin-bottom: 2.7rem
-    line-height: 1.1
-
-.reviews__wrapper
-    margin-bottom: 2.7rem
-
-.reviews__item
-    background-color: $white
-    border-radius: 0.9rem
-    box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5)
-    max-width: 437px
-    height: auto
-    padding: 1.9rem 2rem 2.4rem 2rem
 
 p
     font-size: 1.25rem
@@ -65,46 +51,55 @@ h3
     line-height: 1.28
     letter-spacing: 0.02
 
-.reviews__item-score
-    display: flex
-    background-color: #E0E0E0
-    border-radius: 30px
-    width: 7.8rem
-    padding: 9px 21px 8px 12px
-    margin-bottom: 1.6rem
-    justify-content: space-between
-    align-items: center
-
-.reviews__item-score_value
-    font-size: 1.5rem
-    line-height: 1.25
-    letter-spacing: 0.22
-
-.reviews__item-name_data
-    letter-spacing: 0.02
-
-.reviews__item-button
-    color: $btn
-    font-size: 1.3rem
-    line-height: 1.28
-    letter-spacing: 0.02
-    border: none
-    padding-left: 0px
-    margin-bottom: 2.8rem
-    background-color: transparent
-    transition: 0.4s ease-in
-    &:hover
-        text-decoration: underline
-
-.reviews__item-user
-    display: flex
-
-.rewievs__item-photo
-    border-radius: 50px
-    margin-right: 1.3rem
-
-.reviews__main-button
-    font-size: 1.7rem
+.reviews
+    &__title
+        font-size: 3rem
+        margin-bottom: 2.7rem
+        line-height: 1.1
+    &__wrapper
+        margin-bottom: 2.7rem
+    &__item
+        background-color: $white
+        border-radius: 0.9rem
+        filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+        max-width: 437px
+        height: auto
+        padding: 1.9rem 2rem 2.4rem 2rem
+    &__item-score
+        display: flex
+        background-color: #E0E0E0
+        border-radius: 30px
+        width: 7.8rem
+        padding: 9px 21px 8px 12px
+        margin-bottom: 1.6rem
+        justify-content: space-between
+        align-items: center
+    &__item-score_value
+        font-size: 1.5rem
+        line-height: 1.25
+        letter-spacing: 0.22
+    &__item-name_data
+        letter-spacing: 0.02
+    &__item-button
+        color: $btn
+        font-size: 1.3rem
+        line-height: 1.28
+        letter-spacing: 0.02
+        border: none
+        padding-left: 0px
+        margin-bottom: 2.8rem
+        background-color: transparent
+        transition: 0.4s ease-in
+        
+        &:hover
+            text-decoration: underline
+    &__item-user
+        display: flex
+    &__item-photo
+        border-radius: 50px
+        margin-right: 1.3rem
+    &__main-button
+        font-size: 1.7rem
 
 .reviews__main-button, .roadmap__main-button
     border: none
@@ -126,11 +121,10 @@ h3
     margin-bottom: 5.3rem
     overflow: hidden
     border-radius: 20px
-
+    filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
     &__wrapper
         max-width: 1384px
         height: auto
-
     &__box
         position: absolute
         top: 40%
@@ -142,15 +136,12 @@ h3
         padding-right: 1.15rem
         max-width: 33rem
         margin-right: 0.75rem
-
     &__title
         font-size: 2.6rem
         line-height: 1.1
         margin-bottom: 1rem
-
     &__text
         margin-bottom: 2.4rem
-
     &__main-button
         font-size: 1.6rem
 
@@ -159,29 +150,25 @@ iframe
 
 .communication
     margin-bottom: 4.5rem
-
+    filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
     &__box
         position: relative
         height: auto
         overflow: hidden
-
     &__item
         position: absolute
         top: 58%
         left: 4rem
-
     &__title
         color: $white
         font-size: 3rem
         line-height: 1.1
         margin-bottom: 1.9rem
-
     &__buttons
         display: flex
         justify-content: space-between
         width: 63.7rem
         margin-bottom: 2.4rem
-
     &__button
         border-radius: 50px
         border: none
@@ -216,6 +203,7 @@ iframe
     height: 82px
     display: inline-block
     padding: 23px 22px 21px 23px
+
 
 .rooms
     color: rgba(67, 67, 67, 1)
@@ -394,9 +382,9 @@ iframe
 
 // Медиазапросы: от большего к меньшему, базовый вариант 1440-1920px, далее в соответствии с сеткой bootstrap //
 
-@media screen and (max-width: 1439px) //xl- у меня без изменений, но есть доп размер - до 1260px//
+@media screen and (max-width: 1439px)   // xl- у меня без изменений, но есть доп размер - до 1260px //
 
-@media screen and (max-width: 1260px) //доп медиа-запрос//
+@media screen and (max-width: 1260px)   // доп медиа-запрос //
     .roadmap
         &__main-button
             font-size: 1.4rem
@@ -404,7 +392,7 @@ iframe
         &__main-button
             font-size: 1.5rem
 
-@media screen and (max-width: 1199px) //l//
+@media screen and (max-width: 1199px)   // l //
     .reviews
         &__title
             font-size: 2.5rem
@@ -433,6 +421,9 @@ iframe
         &__button
             width: 17.4rem
             font-size: 1.4rem
+        &__button-logo:active
+            transform: none
+
     .vibe
         &__title-box-hover__text
             padding-left: 20px
@@ -444,7 +435,7 @@ iframe
         &__play-button
             display: none
 
-@media screen and (max-width: 991px) //m//
+@media screen and (max-width: 991px)   // m //
     p
         font-size: 1.1rem
     .reviews
@@ -487,7 +478,7 @@ iframe
         &__title-box-hover__text
             font-size: 1.5rem
 
-@media screen and (max-width: 767px) //m//
+@media screen and (max-width: 767px)   // sm //
     .roadmap
         position: static
         border-radius: 20px 20px 0px 0px
@@ -520,7 +511,7 @@ iframe
         & video
             width: 100%
 
-@media screen and (max-width: 575px) //до 320px//
+@media screen and (max-width: 575px)   // до 320px //
     .communication
         &__item
             top: 2%
@@ -531,9 +522,6 @@ iframe
         &__buttons
             margin-bottom: 1rem
         &__button
-            color: transparent
-            background: transparent
-            backdrop-filter: none
             margin-right: -6rem
     .vibe
         & .vibe__title__text1, .vibe__title__text2

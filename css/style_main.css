@@ -29,30 +29,12 @@ body {
   min-width: 360px;
   background-color: #F5F5F5;
   font-weight: 400;
+  background-color: #FFFFFF;
 }
 
 .container {
   max-width: 1384px;
   color: #757575;
-}
-
-.reviews__title {
-  font-size: 3rem;
-  margin-bottom: 2.7rem;
-  line-height: 1.1;
-}
-
-.reviews__wrapper {
-  margin-bottom: 2.7rem;
-}
-
-.reviews__item {
-  background-color: #FFFFFF;
-  border-radius: 0.9rem;
-  box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5);
-  max-width: 437px;
-  height: auto;
-  padding: 1.9rem 2rem 2.4rem 2rem;
 }
 
 p {
@@ -67,6 +49,22 @@ h3 {
   letter-spacing: 0.02;
 }
 
+.reviews__title {
+  font-size: 3rem;
+  margin-bottom: 2.7rem;
+  line-height: 1.1;
+}
+.reviews__wrapper {
+  margin-bottom: 2.7rem;
+}
+.reviews__item {
+  background-color: #FFFFFF;
+  border-radius: 0.9rem;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
+  max-width: 437px;
+  height: auto;
+  padding: 1.9rem 2rem 2.4rem 2rem;
+}
 .reviews__item-score {
   display: flex;
   background-color: #E0E0E0;
@@ -77,17 +75,14 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-
 .reviews__item-score_value {
   font-size: 1.5rem;
   line-height: 1.25;
   letter-spacing: 0.22;
 }
-
 .reviews__item-name_data {
   letter-spacing: 0.02;
 }
-
 .reviews__item-button {
   color: #2F80ED;
   font-size: 1.3rem;
@@ -102,16 +97,13 @@ h3 {
 .reviews__item-button:hover {
   text-decoration: underline;
 }
-
 .reviews__item-user {
   display: flex;
 }
-
-.rewievs__item-photo {
+.reviews__item-photo {
   border-radius: 50px;
   margin-right: 1.3rem;
 }
-
 .reviews__main-button {
   font-size: 1.7rem;
 }
@@ -137,6 +129,7 @@ h3 {
   margin-bottom: 5.3rem;
   overflow: hidden;
   border-radius: 20px;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
 }
 .roadmap__wrapper {
   max-width: 1384px;
@@ -172,6 +165,7 @@ iframe {
 
 .communication {
   margin-bottom: 4.5rem;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
 }
 .communication__box {
   position: relative;
@@ -483,6 +477,9 @@ iframe {
     width: 17.4rem;
     font-size: 1.4rem;
   }
+  .communication__button-logo:active {
+    transform: none;
+  }
   .vibe__title-box-hover__text {
     padding-left: 20px;
     font-size: 1.5rem;
@@ -607,10 +604,6 @@ iframe {
     margin-bottom: 1rem;
   }
   .communication__button {
-    color: transparent;
-    background: transparent;
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
     margin-right: -6rem;
   }
   .vibe .vibe__title__text1, .vibe .vibe__title__text2 {
