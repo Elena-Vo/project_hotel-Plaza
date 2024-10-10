@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <!-- Подключение Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <!-- CSS for slider -->
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/slick-theme.css" />
         <!-- Подключение нашего листа со стилями -->
         <link rel="stylesheet" href="css/style_main.css" />
     </head>
@@ -30,22 +33,152 @@
       </div>
     </header>
 
-        <!-- Slider -->
+    <!-- Slider -->
+    <section class="slider-section">
+      <div class="slider">
+          <div class="slider__item slide1">
+              <div class="slider__wrap">
+                  <img
+                      class="slide1__img"
+                      src="assets/img/slider1.png"
+                      alt="Slide 1"
+                  />
+                  <div class="slide1__text">
+                      <div class="slide1__big">
+                          <p class="slide1__title">БОЛЬШАЯ БАЗА ОТДЫХА</p>
+                          <p class="slide1__title">В ОКРУЖЕНИИ ЛЕСА</p>
+                      </div>
+                      <h3 class="slide1__small">
+                          Скидка 15% при бронировании через сайт
+                      </h3>
+                  </div>
+                  <button class="slider__button slide1-button">
+                      Забронировать
+                  </button>
+              </div>
+              <!-- konez slider__wrap -->
+          </div>
+          <!-- slider-item -->
 
-    <section class="slider-section container">
-      Тут будет слайдер
-    </section>
+          <div class="slider__item slide2">
+              <div class="slider__wrap">
+                  <div class="slide2__images-block">
+                      <!-- Левая картинка -->
+                      <img
+                          src="assets/img/slide2-1.png"
+                          alt="Image 1"
+                          class="img-left"
+                      />
 
-    <!-- Секция о нас -->
-    <section class="about-us container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="about-left">
-                    <h2>О нас</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+                      <div class="slide2__image-text block-left">
+                          <img
+                              class="img-large"
+                              src="assets/img/slide2-2.png"
+                              alt="комната"
+                          />
+                          <div class="card card-left">
+                              <p class="card__top">От</p>
+                              <p class="card__middle">3200₽</p>
+                              <p class="card__bottom">сутки</p>
+                          </div>
+                      </div>
+                      <!-- Третий блок -->
+                      <div class="slide2__image-text block-right">
+                          <div class="card card-right">
+                              <p class="card__top">Номеров</p>
+                              <p class="card__middle">790+</p>
+                              <p class="card__bottom">свободно</p>
+                          </div>
+                          <img
+                              src="assets/img/slide2-3.png"
+                              alt="Image 3"
+                          />
+                      </div>
+                      <!-- четвертый блок -->
+                      <img
+                          src="assets/img/slide2-4.png"
+                          alt="Image 4"
+                          class="img-right"
+                      />
+                  </div>
+                  
+
+                  <!-- нижняя область -->
+                  <div class="slide2__down">
+                      <div class="slide2__description">
+                          <h3 class="slide2__text1">БОЛЬШАЯ БАЗА ОТДЫХА</h3>
+                          <h3 class="slide2__text2">В ОКРУЖЕНИИ ЛЕСА</h3>
+                          <p class="slide2__text3">
+                              1500-й км Трассы М4-Дон, Геленджик -
+                              Возрождение
+                          </p>
+                      </div>
+                      <button class="slider__button down__button">
+                          Забронировать
+                      </button>
+                  </div>
+              </div> <!-- slider__wrap -->
+              
+          </div>
+          <!-- slider item -->
+          <div class="slider__item slide3">
+              <div class="slider__wrap">
+                  <img
+                      class="slide3__img"
+                      src="assets/img/slide3.png"
+                      alt="общий вид"
+                  />
+              </div>
+              <!-- konez slider__wrap -->
+          </div>
+          <!-- slider-item -->
+      </div>
+      <!-- slider -->
+  </section>
+
+  <section class="about">
+      <div class="about__wrapper">
+          <div class="about__left">
+              <div class="about__description">
+                  <h1 class="about__title">О НАС</h1>
+                  <p class="about__p">
+                      Апарт-отель «SkyPlazaYalta» расположен на закрытой
+                      территории в шаговой доступности от моря и центра
+                      Ялты. В нашем отеле есть всё для вашего
+                      комфортабельного отдыха.
+                  </p>
+                  <p class="about__p">
+                      К вашим услугам: уникальные по своему дизайну и
+                      комфорту, просторные номера с видом на море и город.
+                      Детские площадки, охраняемая территория и подземный
+                      паркинг.
+                  </p>
+                  <p class="about__p">
+                      Самые разнообразные услуги от фотосессии до круиза
+                      по морю на комфортабельной яхте, разнообразят и
+                      украсят ваш отпуск
+                  </p>
+              </div>
+              <img
+                  src="assets/img/about-left.png"
+                  alt="Изображение под карточкой"
+                  class="about__large"
+              />
+          </div>
+          <div class="about__right">
+              <img
+                  src="assets/img/about_right-up.png"
+                  alt="Верхнее изображение"
+                  class="about__upImg"
+              />
+              <img
+                  src="assets/img/about-right-down.png"
+                  alt="Нижнее изображение"
+                  class="about__downImg"
+              />
+          </div>
+      </div>
+  </section>
 
     <!-- Секция Номерной фонд-->
     <section class="rooms container">
@@ -433,6 +566,7 @@
       </div>
   </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main-script.js"></script>
   </body>
 </html>

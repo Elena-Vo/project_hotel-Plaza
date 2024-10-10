@@ -39,6 +39,7 @@ body
     .header
         color: #F5F5F5
         padding: 0px
+    
 
     .menu
         display: flex
@@ -51,16 +52,244 @@ body
             list-style: none
             font-size: 1.06rem
             font-weight: 400
-.menu_phone
-    padding-bottom: 10px
+    .menu_phone
+        padding-bottom: 10px
 
-.menu-tel
-    color: #2F80ED
-    font-size: 1.06rem
+    .menu-tel
+        color: #2F80ED
+        font-size: 1.06rem
+        
+    .container
+        max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
+        color: $txt
 
-.container
-    max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
-    color: $txt
+//Настройки для точек слайдера
+.slick-dots 
+        position: absolute
+        top: 15% // Положение точек прокрутки
+        left: 2% //  по горизонтали
+        transform: translateX(-50%) // Центрируем
+        z-index: 10 // точки сверху
+        width: 50px
+        height: 200px
+        background:#673923
+
+        li
+            margin: 15px
+
+        button 
+            &::before
+                width: 30px
+                height: 30px
+                display: block
+                color: yellow 
+                border: 2px solid
+                border-radius: 50%
+
+//слайдер
+.slider-section
+    position: relative
+    max-width: 1360px
+    max-height: 807px
+    margin: 0 auto
+    background-color: white
+
+    .slider
+        position: relative
+        
+        &__item
+            position: relative
+
+        &__wrap
+            height: 807px
+            position: relative
+            
+
+        //Первый слайд
+        .slide1
+            
+            &__img
+                width: 100%
+                height: auto
+            &__text
+                position: absolute
+                bottom: 140px 
+                left: 45px
+                color: white
+                z-index: 10 
+
+            &__title
+                font-size: 3.125rem //50px
+
+            &__small
+                font-size: 1.125rem
+                margin-top: 15px
+
+        &__button
+            padding: 27px 141px
+            background-color: $btn
+            color: white
+            border: none
+            border-radius: 10px
+            cursor: pointer
+            z-index: 10
+            font-size: 30px
+            &:hover
+                transform: scale(0.95)
+
+        .slide1-button
+            position: absolute
+            bottom: 26px // Положение кнопки, выходящей за пределы слайда
+            right: 100px 
+            z-index: 10
+            
+
+        //Второй слайд
+        .slide2
+            margin-top: 26px
+
+            &__images-block
+                margin-bottom: 30px
+                display: flex
+                max-width: 1440px
+                
+
+            &__image-text
+                margin-left: 30px
+
+            .card 
+                background-color: #F2F2F2
+                padding: 32px
+                border-radius: 11px
+                max-width: 286px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                font-size: 1.125rem
+
+                &__top 
+                    align-self: flex-start
+                    margin-bottom: 18px
+
+                &__middle
+                    align-self: center
+                    color:#2D9CDB
+                    font-size: 3.125rem
+                    font-family: "Inter", sans-serif
+                    font-weight: 600
+                    margin-bottom: 1.125rem
+                    position: relative
+                    &::after
+                        content: ""
+                        position: absolute
+                        left:0
+                        right: 0
+                        bottom:-2px
+                        height: 3px
+                        background: #2D9CDB
+                        transform: scaleX(0)
+                        transition: transform 0.3s
+                    &:hover::after
+                        transform: scaleX(1)
+
+                &__bottom
+                    align-self: flex-end
+
+            .card-left
+                margin-top: 25px
+
+            .card-right
+                margin-bottom: 25px 
+
+            .img-right
+                margin-left: 30px
+
+            //Адрес и кнопка
+            &__down
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+            &__description
+                position: relative
+                padding:0 56px
+                background-color: #F2F2F2
+                border: 2px 
+                border-radius: 10px
+                text-align: center
+                min-height: 179px
+
+            &__text1
+                margin-top: 25px
+                font-size: 36px
+
+            &__text2
+                font-size: 36px
+
+            &__text3
+                font-size: 1.125rem
+                font-weight: 400
+            
+            .down__button
+                margin-top:-20px
+                padding: 22px 118px
+                font-size: 1.625rem //26px
+
+//Секция о нас
+.about
+    max-height: 822px
+    max-width: 1440px
+    margin: 67px auto
+
+    &__wrapper
+        display: flex
+        justify-content: center
+
+    &__left 
+        max-width: 961px
+        margin-right: 25px
+        
+    &__description 
+        padding-left: 51px
+        padding-top: 48px
+        padding-right: 15px
+        border: 2px 
+        box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
+        border-radius: 10px
+        margin-bottom: 25px
+        background-color: white
+        height: 390px
+
+    &__large
+        width:100%
+        object-fit: cover
+
+    &__title
+        font-size: 3.125rem //50px
+        margin-bottom: 28px
+
+    &__p
+        font-size: 1.25rem //20px
+        margin-bottom: 28px
+        &:last-child
+            margin-bottom: 0
+        
+    &__des-image
+        height: auto
+    
+    &__right 
+        display: flex
+        flex-direction: column
+        gap: 25px
+
+    &__upImg
+            height: auto
+
+    &__downImg
+            height: auto
+
+
 
 .info
     background-color: white
@@ -68,7 +297,7 @@ body
     border-radius: 18px
     width: 1360px
     height: 385px
-    margin-bottom: 2rem:
+    margin-bottom: 2rem
     &__text_card
         width: 675px
         height: 283px
