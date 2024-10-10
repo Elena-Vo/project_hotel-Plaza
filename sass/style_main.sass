@@ -39,11 +39,10 @@ body
     max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
     color: $txt
 
-
 .header
     color: #F5F5F5
     padding: 0px
-    
+
 .menu
     display: flex
     justify-content: space-between
@@ -61,29 +60,27 @@ body
 .menu-tel
     color: #2F80ED
     font-size: 1.06rem
-        
-    
 
 //Настройки для точек слайдера
-.slick-dots 
-        position: absolute
-        top: 15% // Положение точек прокрутки
-        left: 2% //  по горизонтали
-        transform: translateX(-50%) // Центрируем
-        z-index: 10 // точки сверху
-        width: 50px
-        height: 200px
-        background:#673923
+.slick-dots
+    position: absolute
+    top: 15% // Положение точек прокрутки
+    left: 2% // по горизонтали
+    transform: translateX(-50%) // Центрируем
+    z-index: 10 // точки сверху
+    width: 50px
+    height: 200px
+    background: #673923
 
-        li
-            margin: 15px
+    li
+        margin: 15px
 
-        button 
+        button
             &::before
                 width: 30px
                 height: 30px
                 display: block
-                color: yellow 
+                color: yellow
                 border: 2px solid
                 border-radius: 50%
 
@@ -97,27 +94,26 @@ body
 
     .slider
         position: relative
-        
+
         &__item
             position: relative
 
         &__wrap
             height: 807px
             position: relative
-            
 
         //Первый слайд
         .slide1
-            
+
             &__img
                 width: 100%
                 height: auto
             &__text
                 position: absolute
-                bottom: 140px 
+                bottom: 140px
                 left: 45px
                 color: white
-                z-index: 10 
+                z-index: 10
 
             &__title
                 font-size: 3.125rem //50px
@@ -141,9 +137,8 @@ body
         .slide1-button
             position: absolute
             bottom: 26px // Положение кнопки, выходящей за пределы слайда
-            right: 100px 
+            right: 100px
             z-index: 10
-            
 
         //Второй слайд
         .slide2
@@ -153,12 +148,11 @@ body
                 margin-bottom: 30px
                 display: flex
                 max-width: 1440px
-                
 
             &__image-text
                 margin-left: 30px
 
-            .card 
+            .card
                 background-color: #F2F2F2
                 padding: 32px
                 border-radius: 11px
@@ -168,13 +162,13 @@ body
                 justify-content: center
                 font-size: 1.125rem
 
-                &__top 
+                &__top
                     align-self: flex-start
                     margin-bottom: 18px
 
                 &__middle
                     align-self: center
-                    color:#2D9CDB
+                    color: #2D9CDB
                     font-size: 3.125rem
                     font-family: "Inter", sans-serif
                     font-weight: 600
@@ -183,9 +177,9 @@ body
                     &::after
                         content: ""
                         position: absolute
-                        left:0
+                        left: 0
                         right: 0
-                        bottom:-2px
+                        bottom: -2px
                         height: 3px
                         background: #2D9CDB
                         transform: scaleX(0)
@@ -200,7 +194,7 @@ body
                 margin-top: 25px
 
             .card-right
-                margin-bottom: 25px 
+                margin-bottom: 25px
 
             .img-right
                 margin-left: 30px
@@ -214,9 +208,9 @@ body
 
             &__description
                 position: relative
-                padding:0 56px
+                padding: 0 56px
                 background-color: #F2F2F2
-                border: 2px 
+                border: 2px
                 border-radius: 10px
                 text-align: center
                 min-height: 179px
@@ -231,9 +225,9 @@ body
             &__text3
                 font-size: 1.125rem
                 font-weight: 400
-            
+
             .down__button
-                margin-top:-20px
+                margin-top: -20px
                 padding: 22px 118px
                 font-size: 1.625rem //26px
 
@@ -247,15 +241,15 @@ body
         display: flex
         justify-content: center
 
-    &__left 
+    &__left
         max-width: 961px
         margin-right: 25px
-        
-    &__description 
+
+    &__description
         padding-left: 51px
         padding-top: 48px
         padding-right: 15px
-        border: 2px 
+        border: 2px
         box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
         border-radius: 10px
         margin-bottom: 25px
@@ -263,7 +257,7 @@ body
         height: 390px
 
     &__large
-        width:100%
+        width: 100%
         object-fit: cover
 
     &__title
@@ -275,22 +269,20 @@ body
         margin-bottom: 28px
         &:last-child
             margin-bottom: 0
-        
+
     &__des-image
         height: auto
-    
-    &__right 
+
+    &__right
         display: flex
         flex-direction: column
         gap: 25px
 
     &__upImg
-            height: auto
+        height: auto
 
     &__downImg
-            height: auto
-
-
+        height: auto
 
 .info
     background-color: white
@@ -315,7 +307,7 @@ body
         width: 573px
         height: 385px
         padding-right: 0px
-    
+
     &__wrapper
         margin-bottom: 2.7rem
     &__item
@@ -325,12 +317,11 @@ body
         max-width: 437px
         height: auto
         padding: 1.9rem 2rem 2.4rem 2rem
-    
+
     img
         width: 100%
         height: 385px
         border-radius: 18px
-
 
 p
     font-size: 1.25rem
@@ -440,8 +431,53 @@ iframe
     border-radius: 20px
 
 .communication
-    margin-bottom: 4.5rem
-    filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+    position: relative
+
+.communication__box
+    position: relative
+    max-width: 1360px
+    height: auto
+
+.communication__item
+    position: absolute
+    top: 58%
+    left: 4rem
+
+.communication__title
+    color: $white
+    font-size: 3rem
+
+.communication__buttons
+    display: flex
+    justify-content: space-between
+    width: 63.7rem
+    margin-bottom: 2.4rem
+
+.communication__button
+    border-radius: 50px
+    border: none
+    background-color: rgba(238, 238, 238, 0.32)
+    color: $white
+    backdrop-filter: blur(14px)
+    padding-left: 0px
+    width: 20.4rem
+    display: flex
+    align-items: center
+    font-size: 1.63rem
+    transition: 0.3s ease-in
+    &_tg
+        width: 19.6rem
+    &:hover
+        transform: scale(0.95)
+
+.communication__button-logo
+    margin-right: 1.8rem
+    transition: 0.4s ease-in
+    &:active
+        transform: translate(15.15rem)
+
+        margin-bottom: 4.5rem
+        filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
     &__box
         position: relative
         height: auto
@@ -497,77 +533,65 @@ iframe
 
 .rooms
     color: rgba(67, 67, 67, 1)
-    background-color: rgb(255, 255, 255)
     line-height: 110%
-    padding-bottom: 30px
-    & .rooms_title
+    padding-left: 0
+    padding-right: 0
+    &__title__text
+        font-weight: 500
+        font-size: 3.12rem
+        margin: 0
         padding-bottom: 48px
-        padding-top: 56px
-    & .room_card
+        padding-top: 104px
+    &__card
         color: rgba(85, 85, 85, 1)
         background-color: white
         box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
-        font-size: 20px
+        font-size: 1.243rem
         font-weight: medium
-        max-width: 323px
         border-radius: 10px
         display: flex
         flex-direction: column
         align-items: flex-start
-    & .room_img
-        max-width: 323px
-        max-height: 229px
-        background-image: url("/assets/img/room.jpg")
-        background-size: cover
-    & .room_about
+    &__about
         padding-left: 21px
         padding-top: 22px
-        max-width: 275px
-    & .price
+        max-width: 86%
+    &__price-box
         display: flex
         align-items: baseline
         padding-bottom: 39px
         padding-top: 37px
-    & .room_price
+    &__price
         color: rgba(45, 156, 219, 1)
         font-weight: 600
-        font-size: 37px
+        font-size: 2.3125rem
         padding-right: 7px
-    & .room_time
+    &__time
         color: rgba(152, 152, 152, 1)
         font-weight: 500
-        font-size: 18px
+        font-size: 1.125rem
 
 .rest
     color: #434343
-    background-color: rgb(255, 255, 255)
     line-height: 110%
-    padding-bottom: 3.125rem
-    & .rest__title__text
+    padding-bottom: 92px
+    margin-bottom: 0
+    padding-left: 0
+    padding-right: 0
+    &__title__text
         font-weight: 500
-        font-size: 3.125rem
+        font-size: 3.12rem
         margin: 0
-        padding-bottom: 3rem
-        padding-top: 3.5rem
-    & .rest__img-box
-        max-width: 1360px
-        max-height: 726px
+        padding-bottom: 48px
+        padding-top: 90px
+    &__img-box
         display: grid
-        grid-template-columns: max(434px) max(441px) max(441px)
-        gap: 1.25rem
-    & .filter-box-img1
-        position: relative
-        grid-row: 1 / 3
-        grid-column: 1 / 2
-    & .filter-box-img2
-        position: relative
-    & .filter-box-img3
-        position: relative
-    & .filter-box-img4
-        position: relative
-        grid-row: 2 / 3
-        grid-column: 2 / 4
-    & .rest__img-box__img-filter
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 352px 352px
+        gap: 22px
+        padding-right: 0
+        margin-right: 0
+    &__img-box__img-filter
         color: $white
         opacity: 0
         line-height: 110%
@@ -586,34 +610,71 @@ iframe
         &:hover
             opacity: 1
             background-color: rgba(0, 0, 0, 0.7)
-    & .img-filter-text
-        max-width: 340px
+
+.filter-box-img1
+    position: relative
+    grid-row: 1 / 3
+    grid-column: 1 / 2
+    background-image: url("/assets/img/rest_img1.png")
+    background-size: cover
+    border-radius: 12px
+
+.filter-box-img2
+    position: relative
+    background-image: url("/assets/img/rest_img2.png")
+    background-size: cover
+    border-radius: 12px
+
+.filter-box-img3
+    position: relative
+    background-image: url("/assets/img/rest_img3.png")
+    background-size: cover
+    border-radius: 12px
+
+.filter-box-img4
+    position: relative
+    grid-row: 2 / 3
+    grid-column: 2 / 4
+    background-image: url("/assets/img/rest_img4.png")
+    background-size: cover
+    border-radius: 12px
+
+.img-filter-text
+    max-width: 340px
+
+video
+    border-radius: 17px
+    float: right
+    width: 100%
+
+.vibe__video-box
+    padding-left: 4.41%
+    padding-right: 0
+    margin: 0
+
+.play-button
+    width: 36px
+    height: 36px
 
 .vibe
-    & video
-        border-radius: 17px
-        float: right
-        width: 100%
+    padding-right: 0
     &__video
         position: relative
-        width: 743px
+        padding-right: 0
+        margin: 0
         height: 470px
         display: flex
         justify-content: end
     &__play-button
         position: absolute
-        top: 157px
-        left: 293px
+        top: 33.404%
+        right: calc((100% - 156px)/2)
         background-color: rgba(102, 90, 93, 0.3)
         backdrop-filter: blur(5px)
         border: none
         border-radius: 78px
         width: 156px
         height: 156px
-    & .play-button
-        width: 36px
-        height: 36px
-
     &__title-box-hover
         opacity: 0
         position: absolute
@@ -647,28 +708,29 @@ iframe
         min-height: 470px
         padding-top: 142px
 
-    & .vibe-wrapper
-        padding-bottom: 92px
-        margin-right: 0
-        &:hover
-            padding-bottom: 36px
-            .vibe__title
-                align-items: flex-start
-                padding-top: 69px
-                padding-left: 0
-                .vibe__title__text1, .vibe__title__text2
-                    font-size: 3.125rem
-                    transition: 0.2s ease-in
-                .vibe__title-box-hover
-                    opacity: 1
-                    transition: 0.3s ease-in
-                    padding-top: 209px
-            video
-                max-width: 669px
-                margin-top: 34px
-            .vibe__play-button
-                margin-top: 34px
-                margin-left: 37px
+.vibe-wrapper
+    padding-bottom: 92px
+    margin-right: 0
+    &:hover
+        padding-bottom: 36px
+        .vibe__title
+            align-items: flex-start
+            padding-top: 69px
+            padding-left: 0
+        .vibe__title__text1, .vibe__title__text2
+            font-size: 3.125rem
+            transition: 0.2s ease-in
+        .vibe__title-box-hover
+            opacity: 1
+            transition: 0.3s ease-in
+            padding-top: 209px
+        video
+            max-width: 669px
+            margin-top: 34px
+            transition: 0.3s ease-in
+        .vibe__play-button
+            margin-top: 34px
+            right: calc((669px - 156px)/2)
 
 .footer
     margin-right: auto
@@ -720,6 +782,9 @@ li
     .reviews
         &__main-button
             font-size: 1.5rem
+    .vibe-wrapper:hover
+        .vibe__play-button
+            right: calc((100% - 156px)/2)
 
 @media screen and (max-width: 1199px)   // l //
     .reviews
@@ -752,7 +817,6 @@ li
             font-size: 1.4rem
         &__button-logo:active
             transform: none
-
     .vibe
         &__title-box-hover__text
             padding-left: 20px
@@ -761,8 +825,11 @@ li
             padding-left: 20px
         &__video
             justify-content: start
-        &__play-button
-            display: none
+    .vibe-wrapper:hover
+        .vibe__play-button
+            right: calc((100% - 669px) + (669px - 156px)/2)
+    .rooms__card
+        margin-bottom: 25px
 
 @media screen and (max-width: 991px)   // m //
     p
@@ -806,6 +873,30 @@ li
     .vibe
         &__title-box-hover__text
             font-size: 1.5rem
+    .rest
+        &__img-box
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr 352px 352px 352px
+            gap: 18px
+    .filter-box-img1
+        grid-row: 1 / 3
+        grid-column: 1 / 2
+        width: 434px
+        height: 726px
+    .filter-box-img2
+        grid-row: 3 / 4
+        grid-column: 1 / 2
+        width: 441px
+        height: 352px
+    .filter-box-img3
+        grid-row: 4 / 5
+        grid-column: 1 / 2
+        width: 441px
+        height: 352px
+    .filter-box-img4
+        grid-row: 5 / 6
+        grid-column: 1 / 2
+        height: 352px
 
 @media screen and (max-width: 767px)   // sm //
     .roadmap
@@ -833,12 +924,17 @@ li
     .vibe
         &__title
             min-height: 470px
-        & .vibe__title__text1, .vibe__title__text2
-            font-size: 4.5rem
+        &__title__text1
+            font-size: 4.3rem
+        &__title__text2
+            font-size: 5.8rem
         &__video
             width: 100%
-        & video
-            width: 100%
+    video
+        width: 100%
+    .vibe-wrapper:hover
+        .vibe__play-button
+            display: none
 
 @media screen and (max-width: 575px)   // до 320px //
     .communication
@@ -853,10 +949,23 @@ li
         &__button
             margin-right: -6rem
     .vibe
-        & .vibe__title__text1, .vibe__title__text2
-            font-size: 3rem
+        &__title__text1
+            font-size: 2rem
+        &__title__text2
+            font-size: 3.5rem
         &__title
             min-height: 570px
-
-@media screen and (max-width: 575px)
-    .info
+    .rest
+        &__title__text
+            font-size: 2.8rem
+        &__img-box
+            grid-template-rows: repeat(5, 1fr)
+    .filter-box-img1, .filter-box-img2, .filter-box-img3
+        width: 100%
+    .rooms
+        &__text
+            font-size: 1.8rem
+        &__time
+            font-size: 1.6rem
+        &__price
+            font-size: 2.7rem

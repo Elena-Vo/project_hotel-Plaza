@@ -76,7 +76,7 @@ body {
 .slick-dots li {
   margin: 15px;
 }
-.slick-dots button::before {
+.slick-dots li button::before {
   width: 30px;
   height: 30px;
   display: block;
@@ -457,32 +457,86 @@ iframe {
 }
 
 .communication {
-  margin-bottom: 4.5rem;
-  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
+  position: relative;
 }
+
 .communication__box {
   position: relative;
+  max-width: 1360px;
   height: auto;
-  overflow: hidden;
 }
+
 .communication__item {
   position: absolute;
   top: 58%;
   left: 4rem;
 }
+
 .communication__title {
   color: #FFFFFF;
   font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 1.9rem;
 }
+
 .communication__buttons {
   display: flex;
   justify-content: space-between;
   width: 63.7rem;
   margin-bottom: 2.4rem;
 }
+
 .communication__button {
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(238, 238, 238, 0.32);
+  color: #FFFFFF;
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  padding-left: 0px;
+  width: 20.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.63rem;
+  transition: 0.3s ease-in;
+}
+.communication__button_tg {
+  width: 19.6rem;
+}
+.communication__button:hover {
+  transform: scale(0.95);
+}
+
+.communication__button-logo {
+  margin-right: 1.8rem;
+  transition: 0.4s ease-in;
+}
+.communication__button-logo:active {
+  transform: translate(15.15rem);
+  margin-bottom: 4.5rem;
+  filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07));
+}
+.communication__button-logo__box {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.communication__button-logo__item {
+  position: absolute;
+  top: 58%;
+  left: 4rem;
+}
+.communication__button-logo__title {
+  color: #FFFFFF;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.9rem;
+}
+.communication__button-logo__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 63.7rem;
+  margin-bottom: 2.4rem;
+}
+.communication__button-logo__button {
   border-radius: 50px;
   border: none;
   background-color: rgba(238, 238, 238, 0.32);
@@ -497,17 +551,17 @@ iframe {
   line-height: 1.1;
   transition: 0.3s ease-in;
 }
-.communication__button_tg {
+.communication__button-logo__button_tg {
   width: 19.6rem;
 }
-.communication__button:hover {
+.communication__button-logo__button:hover {
   transform: scale(0.95);
 }
-.communication__button-logo {
+.communication__button-logo__button-logo {
   margin-right: 1.8rem;
   transition: 0.4s ease-in;
 }
-.communication__button-logo:active {
+.communication__button-logo__button-logo:active {
   transform: translate(15.15rem);
 }
 
@@ -522,92 +576,75 @@ iframe {
 
 .rooms {
   color: rgb(67, 67, 67);
-  background-color: rgb(255, 255, 255);
   line-height: 110%;
-  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
-.rooms .rooms_title {
+.rooms__title__text {
+  font-weight: 500;
+  font-size: 3.12rem;
+  margin: 0;
   padding-bottom: 48px;
-  padding-top: 56px;
+  padding-top: 104px;
 }
-.rooms .room_card {
+.rooms__card {
   color: rgb(85, 85, 85);
   background-color: white;
   box-shadow: 0px 20px 40px 10px rgb(237, 237, 237);
-  font-size: 20px;
+  font-size: 1.243rem;
   font-weight: medium;
-  max-width: 323px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.rooms .room_img {
-  max-width: 323px;
-  max-height: 229px;
-  background-image: url("/assets/img/room.jpg");
-  background-size: cover;
-}
-.rooms .room_about {
+.rooms__about {
   padding-left: 21px;
   padding-top: 22px;
-  max-width: 275px;
+  max-width: 86%;
 }
-.rooms .price {
+.rooms__price-box {
   display: flex;
   align-items: baseline;
   padding-bottom: 39px;
   padding-top: 37px;
 }
-.rooms .room_price {
+.rooms__price {
   color: rgb(45, 156, 219);
   font-weight: 600;
-  font-size: 37px;
+  font-size: 2.3125rem;
   padding-right: 7px;
 }
-.rooms .room_time {
+.rooms__time {
   color: rgb(152, 152, 152);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .rest {
   color: #434343;
-  background-color: rgb(255, 255, 255);
   line-height: 110%;
-  padding-bottom: 3.125rem;
+  padding-bottom: 92px;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.rest .rest__title__text {
+.rest__title__text {
   font-weight: 500;
-  font-size: 3.125rem;
+  font-size: 3.12rem;
   margin: 0;
-  padding-bottom: 3rem;
-  padding-top: 3.5rem;
+  padding-bottom: 48px;
+  padding-top: 90px;
 }
-.rest .rest__img-box {
-  max-width: 1360px;
-  max-height: 726px;
+.rest__img-box {
   display: grid;
-  grid-template-columns: 434px 441px 441px;
-  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 352px 352px;
+  gap: 22px;
+  padding-right: 0;
+  margin-right: 0;
 }
-.rest .filter-box-img1 {
-  position: relative;
-  grid-row: 1/3;
-  grid-column: 1/2;
-}
-.rest .filter-box-img2 {
-  position: relative;
-}
-.rest .filter-box-img3 {
-  position: relative;
-}
-.rest .filter-box-img4 {
-  position: relative;
-  grid-row: 2/3;
-  grid-column: 2/4;
-}
-.rest .rest__img-box__img-filter {
+.rest__img-box__img-filter {
   color: #FFFFFF;
   opacity: 0;
   line-height: 110%;
@@ -624,30 +661,79 @@ iframe {
   bottom: 0;
   border-radius: 12px;
 }
-.rest .rest__img-box__img-filter:hover {
+.rest__img-box__img-filter:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.rest .img-filter-text {
+
+.filter-box-img1 {
+  position: relative;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background-image: url("/assets/img/rest_img1.png");
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.filter-box-img2 {
+  position: relative;
+  background-image: url("/assets/img/rest_img2.png");
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.filter-box-img3 {
+  position: relative;
+  background-image: url("/assets/img/rest_img3.png");
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.filter-box-img4 {
+  position: relative;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  background-image: url("/assets/img/rest_img4.png");
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.img-filter-text {
   max-width: 340px;
 }
 
-.vibe video {
+video {
   border-radius: 17px;
   float: right;
   width: 100%;
 }
+
+.vibe__video-box {
+  padding-left: 4.41%;
+  padding-right: 0;
+  margin: 0;
+}
+
+.play-button {
+  width: 36px;
+  height: 36px;
+}
+
+.vibe {
+  padding-right: 0;
+}
 .vibe__video {
   position: relative;
-  width: 743px;
+  padding-right: 0;
+  margin: 0;
   height: 470px;
   display: flex;
   justify-content: end;
 }
 .vibe__play-button {
   position: absolute;
-  top: 157px;
-  left: 293px;
+  top: 33.404%;
+  right: calc((100% - 156px) / 2);
   background-color: rgba(102, 90, 93, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -655,10 +741,6 @@ iframe {
   border-radius: 78px;
   width: 156px;
   height: 156px;
-}
-.vibe .play-button {
-  width: 36px;
-  height: 36px;
 }
 .vibe__title-box-hover {
   opacity: 0;
@@ -697,34 +779,36 @@ iframe {
   min-height: 470px;
   padding-top: 142px;
 }
-.vibe .vibe-wrapper {
+
+.vibe-wrapper {
   padding-bottom: 92px;
   margin-right: 0;
 }
-.vibe .vibe-wrapper:hover {
+.vibe-wrapper:hover {
   padding-bottom: 36px;
 }
-.vibe .vibe-wrapper:hover .vibe__title {
+.vibe-wrapper:hover .vibe__title {
   align-items: flex-start;
   padding-top: 69px;
   padding-left: 0;
 }
-.vibe .vibe-wrapper:hover .vibe__title .vibe__title__text1, .vibe .vibe-wrapper:hover .vibe__title .vibe__title__text2 {
+.vibe-wrapper:hover .vibe__title__text1, .vibe-wrapper:hover .vibe__title__text2 {
   font-size: 3.125rem;
   transition: 0.2s ease-in;
 }
-.vibe .vibe-wrapper:hover .vibe__title .vibe__title-box-hover {
+.vibe-wrapper:hover .vibe__title-box-hover {
   opacity: 1;
   transition: 0.3s ease-in;
   padding-top: 209px;
 }
-.vibe .vibe-wrapper:hover video {
+.vibe-wrapper:hover video {
   max-width: 669px;
   margin-top: 34px;
+  transition: 0.3s ease-in;
 }
-.vibe .vibe-wrapper:hover .vibe__play-button {
+.vibe-wrapper:hover .vibe__play-button {
   margin-top: 34px;
-  margin-left: 37px;
+  right: 256.5px;
 }
 
 .footer {
@@ -783,6 +867,9 @@ li {
   .reviews__main-button {
     font-size: 1.5rem;
   }
+  .vibe-wrapper:hover .vibe__play-button {
+    right: calc((100% - 156px) / 2);
+  }
 }
 @media screen and (max-width: 1199px) {
   .reviews__title {
@@ -832,8 +919,11 @@ li {
   .vibe__video {
     justify-content: start;
   }
-  .vibe__play-button {
-    display: none;
+  .vibe-wrapper:hover .vibe__play-button {
+    right: calc(100% - 669px + 256.5px);
+  }
+  .rooms__card {
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -890,6 +980,34 @@ li {
   .vibe__title-box-hover__text {
     font-size: 1.5rem;
   }
+  .rest__img-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 352px 352px 352px;
+    gap: 18px;
+  }
+  .filter-box-img1 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 434px;
+    height: 726px;
+  }
+  .filter-box-img2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 441px;
+    height: 352px;
+  }
+  .filter-box-img3 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 441px;
+    height: 352px;
+  }
+  .filter-box-img4 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    height: 352px;
+  }
 }
 @media screen and (max-width: 767px) {
   .roadmap {
@@ -923,14 +1041,20 @@ li {
   .vibe__title {
     min-height: 470px;
   }
-  .vibe .vibe__title__text1, .vibe .vibe__title__text2 {
-    font-size: 4.5rem;
+  .vibe__title__text1 {
+    font-size: 4.3rem;
+  }
+  .vibe__title__text2 {
+    font-size: 5.8rem;
   }
   .vibe__video {
     width: 100%;
   }
-  .vibe video {
+  video {
     width: 100%;
+  }
+  .vibe-wrapper:hover .vibe__play-button {
+    display: none;
   }
 }
 @media screen and (max-width: 575px) {
@@ -948,10 +1072,31 @@ li {
   .communication__button {
     margin-right: -6rem;
   }
-  .vibe .vibe__title__text1, .vibe .vibe__title__text2 {
-    font-size: 3rem;
+  .vibe__title__text1 {
+    font-size: 2rem;
+  }
+  .vibe__title__text2 {
+    font-size: 3.5rem;
   }
   .vibe__title {
     min-height: 570px;
+  }
+  .rest__title__text {
+    font-size: 2.8rem;
+  }
+  .rest__img-box {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .filter-box-img1, .filter-box-img2, .filter-box-img3 {
+    width: 100%;
+  }
+  .rooms__text {
+    font-size: 1.8rem;
+  }
+  .rooms__time {
+    font-size: 1.6rem;
+  }
+  .rooms__price {
+    font-size: 2.7rem;
   }
 }
