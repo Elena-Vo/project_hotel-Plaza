@@ -27,9 +27,40 @@ body {
   /* Центрируем весь контент */
   margin: 0 auto;
   min-width: 360px;
-  background-color: #F5F5F5;
   font-weight: 400;
   background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1384px;
+  color: #757575;
+}
+
+.header {
+  color: #F5F5F5;
+  padding: 0px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.06rem;
+  font-weight: 400;
+}
+
+.menu_phone {
+  padding-bottom: 10px;
+}
+
+.menu-tel {
+  color: #2F80ED;
+  font-size: 1.06rem;
 }
 
 .slick-dots {
@@ -226,7 +257,8 @@ body {
 }
 .about__large {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__title {
   font-size: 3.125rem;
@@ -296,25 +328,6 @@ body {
   width: 100%;
   height: 385px;
   border-radius: 18px;
-}
-
-.reviews__title {
-  font-size: 3rem;
-  margin-bottom: 2.7rem;
-  line-height: 1.1;
-}
-
-.reviews__wrapper {
-  margin-bottom: 2.7rem;
-}
-
-.reviews__item {
-  background-color: #FFFFFF;
-  border-radius: 0.9rem;
-  box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5);
-  max-width: 437px;
-  height: auto;
-  padding: 1.9rem 2rem 2.4rem 2rem;
 }
 
 p {
@@ -474,7 +487,8 @@ iframe {
   border: none;
   background-color: rgba(238, 238, 238, 0.32);
   color: #FFFFFF;
-  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
   padding-left: 0px;
   width: 20.4rem;
   display: flex;
@@ -635,7 +649,8 @@ iframe {
   top: 157px;
   left: 293px;
   background-color: rgba(102, 90, 93, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border: none;
   border-radius: 78px;
   width: 156px;
@@ -901,7 +916,8 @@ li {
   .communication__button {
     color: transparent;
     background: transparent;
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
     margin-right: -4rem;
   }
   .vibe__title {

@@ -31,37 +31,38 @@ body
     /* Центрируем весь контент */
     margin: 0 auto
     min-width: 360px
-    background-color: #F5F5F5
     font-weight: 400
     background-color: $white
 
 // Main container
-    .header
-        color: #F5F5F5
-        padding: 0px
+.container
+    max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
+    color: $txt
+
+
+.header
+    color: #F5F5F5
+    padding: 0px
     
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0px
 
-    .menu
+    ul
         display: flex
-        justify-content: space-between
-        align-items: center
-        padding: 0px
-
-        ul
-            display: flex
-            list-style: none
-            font-size: 1.06rem
-            font-weight: 400
-    .menu_phone
-        padding-bottom: 10px
-
-    .menu-tel
-        color: #2F80ED
+        list-style: none
         font-size: 1.06rem
+        font-weight: 400
+.menu_phone
+    padding-bottom: 10px
+
+.menu-tel
+    color: #2F80ED
+    font-size: 1.06rem
         
-    .container
-        max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
-        color: $txt
+    
 
 //Настройки для точек слайдера
 .slick-dots 
@@ -314,7 +315,7 @@ body
         width: 573px
         height: 385px
         padding-right: 0px
-
+    
     &__wrapper
         margin-bottom: 2.7rem
     &__item
@@ -324,26 +325,12 @@ body
         max-width: 437px
         height: auto
         padding: 1.9rem 2rem 2.4rem 2rem
+    
     img
         width: 100%
         height: 385px
         border-radius: 18px
 
-.reviews__title
-    font-size: 3rem
-    margin-bottom: 2.7rem
-    line-height: 1.1
-
-.reviews__wrapper
-    margin-bottom: 2.7rem
-
-.reviews__item
-    background-color: $white
-    border-radius: 0.9rem
-    box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.5)
-    max-width: 437px
-    height: auto
-    padding: 1.9rem 2rem 2.4rem 2rem
 
 p
     font-size: 1.25rem

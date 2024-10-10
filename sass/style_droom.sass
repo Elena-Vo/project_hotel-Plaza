@@ -20,13 +20,187 @@
     font-weight: 600
     font-style: normal
 
+// Colors  
+$btn: #2F80ED
+$white: #FFFFFF
+$txt: #757575
+
 // Base Styles
 body
     font-family: Arial, sans-serif
     margin: 0 auto
     min-width: 360px
-    background-color: #F5F5F5
+    background-color: $white
 
+// Main container
+.container
+    max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
+    color: $txt
+
+p
+    font-size: 1.25rem
+    line-height: 1.28
+    font-weight: 500
+
+h3
+    font-size: 1.7rem
+    line-height: 1.28
+    letter-spacing: 0.02
+
+.roadmap
+    max-width: 1384px
+    height: auto
+    position: relative
+    margin-bottom: 5.3rem
+    overflow: hidden
+    border-radius: 20px
+    filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+    &__wrapper
+        max-width: 1384px
+        height: auto
+    &__box
+        position: absolute
+        top: 40%
+        left: 61%
+        background-color: $white
+        border-radius: 50px 0px 20px 0px
+        padding-top: 2.75rem
+        padding-left: 3.125rem
+        padding-right: 1.15rem
+        max-width: 33rem
+        margin-right: 0.75rem
+    &__title
+        font-size: 2.6rem
+        line-height: 1.1
+        margin-bottom: 1rem
+    &__text
+        margin-bottom: 2.4rem
+    &__main-button
+        font-size: 1.6rem
+
+iframe
+    border-radius: 20px
+
+.reviews
+    &__title
+        font-size: 3rem
+        margin-bottom: 2.7rem
+        line-height: 1.1
+    &__wrapper
+        margin-bottom: 2.7rem
+    &__item
+        background-color: $white
+        border-radius: 0.9rem
+        filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+        max-width: 437px
+        height: auto
+        padding: 1.9rem 2rem 2.4rem 2rem
+    &__item-score
+        display: flex
+        background-color: #E0E0E0
+        border-radius: 30px
+        width: 7.8rem
+        padding: 9px 21px 8px 12px
+        margin-bottom: 1.6rem
+        justify-content: space-between
+        align-items: center
+    &__item-score_value
+        font-size: 1.5rem
+        line-height: 1.25
+        letter-spacing: 0.22
+    &__item-name_data
+        letter-spacing: 0.02
+    &__item-button
+        color: $btn
+        font-size: 1.3rem
+        line-height: 1.28
+        letter-spacing: 0.02
+        border: none
+        padding-left: 0px
+        margin-bottom: 2.8rem
+        background-color: transparent
+        transition: 0.4s ease-in
+
+        &:hover
+            text-decoration: underline
+    &__item-user
+        display: flex
+    &__item-photo
+        border-radius: 50px
+        margin-right: 1.3rem
+    &__main-button
+        font-size: 1.7rem
+
+.reviews__main-button, .roadmap__main-button
+    border: none
+    border-radius: 10px
+    background-color: $btn
+    color: $white
+    letter-spacing: 0.02
+    padding: 26px 72px 26px 72px
+    margin-bottom: 5.3rem
+    transition: 0.3s ease-in
+
+    &:hover
+        transform: scale(0.95)
+
+.communication
+    margin-bottom: 4.5rem
+    filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
+    &__box
+        position: relative
+        height: auto
+        overflow: hidden
+    &__item
+        position: absolute
+        top: 58%
+        left: 4rem
+    &__title
+        color: $white
+        font-size: 3rem
+        line-height: 1.1
+        margin-bottom: 1.9rem
+    &__buttons
+        display: flex
+        justify-content: space-between
+        width: 63.7rem
+        margin-bottom: 2.4rem
+    &__button
+        border-radius: 50px
+        border: none
+        background-color: rgba(238, 238, 238, 0.32)
+        color: $white
+        backdrop-filter: blur(14px)
+        padding-left: 0px
+        width: 20.4rem
+        display: flex
+        align-items: center
+        font-size: 1.63rem
+        line-height: 1.1
+        transition: 0.3s ease-in
+
+        &_tg
+            width: 19.6rem
+
+        &:hover
+            transform: scale(0.95)
+
+    &__button-logo
+        margin-right: 1.8rem
+        transition: 0.4s ease-in
+
+        &:active
+            transform: translate(15.15rem)
+
+.phone
+    background-color: $btn
+    border-radius: 50px
+    width: 82px
+    height: 82px
+    display: inline-block
+    padding: 23px 22px 21px 23px
+
+    
 .footer
     margin-right: auto
     margin-left: auto
@@ -65,3 +239,125 @@ a
     color: rgba(90, 90, 90, 1)
 li
     margin: 15px
+
+
+// Медиазапросы: от большего к меньшему, базовый вариант 1440-1920px, далее в соответствии с сеткой bootstrap //
+
+@media screen and (max-width: 1439px)   // xl- у меня без изменений, но есть доп размер - до 1260px //
+
+@media screen and (max-width: 1260px)   // доп медиа-запрос //
+    .roadmap
+        &__main-button
+            font-size: 1.4rem
+    .reviews
+        &__main-button
+            font-size: 1.5rem
+
+@media screen and (max-width: 1199px)   // l //
+    .reviews
+        &__title
+            font-size: 2.5rem
+    .roadmap
+        &__box
+            top: 35%
+            padding-top: 1.5rem
+            padding-left: 2rem
+            padding-right: 1rem
+        &__title
+            font-size: 2rem
+            margin-bottom: 1rem
+        &__text
+            margin-bottom: 1.5rem
+    .reviews__main-button, .roadmap__main-button
+        padding: 13px 36px 13px 36px
+    .communication
+        &__item
+            top: 48%
+            left: 2rem
+        &__title
+            font-size: 2.5rem
+            margin-bottom: 1.5rem
+        &__buttons
+            width: 56rem
+        &__button
+            width: 17.4rem
+            font-size: 1.4rem
+        &__button-logo:active
+            transform: none
+
+@media screen and (max-width: 991px)   // m //
+    p
+        font-size: 1.1rem
+    .reviews
+        &__wrapper
+            margin-bottom: 1.3rem
+        &__main-button
+            margin-bottom: 2rem
+        &__title
+            margin-bottom: 1.5rem
+            font-size: 1.75rem
+    .roadmap
+        margin-bottom: 2rem
+        &__box
+            top: 15%
+            padding-top: 1.25rem
+            padding-left: 1.5rem
+            border-radius: 30px 0px 20px 0px
+        &__title
+            font-size: 1.5rem
+        &__text
+            margin-bottom: 1.2rem
+    .reviews__main-button, .roadmap__main-button
+        padding: 10px 20px 10px 20px
+        font-size: 1.2rem
+    .communication
+        &__item
+            top: 42%
+            left: 1.15rem
+        &__title
+            font-size: 1.75rem
+            margin-bottom: 1rem
+        &__buttons
+            width: 44rem
+        &__button
+            width: 14rem
+            font-size: 1.2rem
+        &__button-logo
+            margin-right: 0.7rem
+
+@media screen and (max-width: 767px)   // sm //
+    .roadmap
+        position: static
+        border-radius: 20px 20px 0px 0px
+        &__box
+            position: static
+            border-radius: 0px 0px 20px 20px
+            max-width: 1384px
+            margin-right: 0
+        &__main-button
+            margin-bottom: 1.5rem
+    .communication
+        &__item
+            top: 28%
+            left: 2rem
+        &__buttons
+            width: 5rem
+            margin-bottom: 1.5rem
+        &__button
+            color: transparent
+            background: transparent
+            backdrop-filter: none
+            margin-right: -4rem
+ 
+@media screen and (max-width: 575px)   // до 320px //
+    .communication
+        &__item
+            top: 2%
+            left: 1rem
+        &__title
+            font-size: 1.5rem
+            margin-bottom: 0.3rem
+        &__buttons
+            margin-bottom: 1rem
+        &__button
+            margin-right: -6rem
