@@ -36,8 +36,9 @@ body
 .container
     max-width: 1384px // 1360px плюс боковые марджины от bootstrap по 12px //
     color: $txt
+    padding-top: 50px
 
-.h1
+.room-name
   font-size: 49.89px
   font-family: Inter
   color: #434343
@@ -107,17 +108,19 @@ body
   height: 278px
   box-sizing: border-box
   justify-content: flex-start
-  padding-left: 106px
+  padding-left: 60px
 
 .comfort-list
   list-style-type: disc
-  padding-left: 20px
+  padding-left: 0px
   columns: 2
-  column-gap: 60px
+  column-gap: 40px
   font-size: 16px
+  margin: 0
 
 .comfort-list li::marker
   color: #2F80ED
+  width: calc(50% - 20px)
 
 .room-information span::after
   content: " • "
@@ -458,6 +461,15 @@ li
         &__main-button
             font-size: 1.5rem
 
+    .container
+       transform: scale(0.9)
+       transform-origin: top center
+   
+
+    
+    
+
+
 @media screen and (max-width: 1199px)   // l //
     .reviews
         &__title
@@ -489,6 +501,28 @@ li
             font-size: 1.4rem
         &__button-logo:active
             transform: none
+    
+    .container
+       transform: scale(0.85)
+       transform-origin: top center
+       margin-bottom: 0
+    .main-content
+       transform: scale(0.85)
+       transform-origin: top center
+       margin-bottom: 0
+       margin-left: 0
+    .contact-block
+       transform: scale(0.85)
+       transform-origin: top center
+    .main-information
+       width: auto
+       max-width: 100%
+       margin-left: auto
+       margin-bottom: 0
+       margin-top: 0
+       padding-top: 10px
+       padding-bottom: 10px
+       transform: none
 
 @media screen and (max-width: 991px)   // m //
     p
@@ -530,6 +564,22 @@ li
         &__button-logo
             margin-right: 0.7rem
 
+    .container
+       display: flex
+       flex-direction: column
+    .slider
+       display: none
+    .contact-block
+       order: 2
+       margin-top: 20px
+    .main-container
+       order: 1
+       margin-left: 0
+    .main-information
+       margin-left: 0
+       width: auto
+
+
 @media screen and (max-width: 767px)   // sm //
     .roadmap
         position: static
@@ -553,6 +603,24 @@ li
             background: transparent
             backdrop-filter: none
             margin-right: -4rem
+
+    .slider
+       display: none
+    .contact-block
+       order: 2
+       margin-top: 20px
+    .main-container
+       order: 1
+       margin-left: 0
+    .main-information
+       margin-left: 0
+       width: auto
+       max-width: 100%
+       margin-right: auto
+       box-sizing: border-box
+    .next-block
+       margin-top: none
+
  
 @media screen and (max-width: 575px)   // до 320px //
     .communication
@@ -566,3 +634,4 @@ li
             margin-bottom: 1rem
         &__button
             margin-right: -6rem
+
