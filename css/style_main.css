@@ -578,21 +578,21 @@ iframe {
   position: relative;
   grid-row: 1/3;
   grid-column: 1/2;
-  background-image: url("/assets/img/rest_img1.png");
+  background-image: url("/assets/img/rest_img1.jpg");
   background-size: cover;
   border-radius: 12px;
 }
 
 .filter-box-img2 {
   position: relative;
-  background-image: url("/assets/img/rest_img2.png");
+  background-image: url("/assets/img/rest_img2.jpg");
   background-size: cover;
   border-radius: 12px;
 }
 
 .filter-box-img3 {
   position: relative;
-  background-image: url("/assets/img/rest_img3.png");
+  background-image: url("/assets/img/rest_img3.jpg");
   background-size: cover;
   border-radius: 12px;
 }
@@ -601,7 +601,7 @@ iframe {
   position: relative;
   grid-row: 2/3;
   grid-column: 2/4;
-  background-image: url("/assets/img/rest_img4.png");
+  background-image: url("/assets/img/rest_img4.jpg");
   background-size: cover;
   border-radius: 12px;
 }
@@ -837,6 +837,9 @@ li {
   }
 }
 @media screen and (max-width: 991px) {
+  .menu_phone {
+    display: none;
+  }
   .about__row-1left {
     padding: 15px 10px;
   }
@@ -930,6 +933,9 @@ li {
   }
 }
 @media screen and (max-width: 767px) {
+  li {
+    margin: 6px;
+  }
   .slide1__text {
     font-size: 1.2rem;
   }
