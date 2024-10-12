@@ -35,6 +35,19 @@ body {
   color: #757575;
 }
 
+.header {
+  padding-top: 15px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.main-section {
+  margin-top: 50px;
+}
+
 .room-name {
   font-size: 49.89px;
   font-family: Inter;
@@ -119,10 +132,8 @@ body {
 .comfort-list {
   list-style-type: disc;
   padding-left: 0px;
-  -moz-columns: 2;
-       columns: 2;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  columns: 2;
+  column-gap: 40px;
   font-size: 16px;
   margin: 0;
 }
@@ -425,8 +436,7 @@ iframe {
   border: none;
   background-color: rgba(238, 238, 238, 0.32);
   color: #FFFFFF;
-  -webkit-backdrop-filter: blur(14px);
-          backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   padding-left: 0px;
   width: 20.4rem;
   display: flex;
@@ -679,8 +689,7 @@ li {
   .communication__button {
     color: transparent;
     background: transparent;
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
+    backdrop-filter: none;
     margin-right: -4rem;
   }
   .slider {

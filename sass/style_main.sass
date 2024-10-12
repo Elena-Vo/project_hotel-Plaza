@@ -91,6 +91,7 @@ body
     max-height: 807px
     margin: 0 auto
     background-color: white
+    margin-bottom: 50px
 
     .slider
         position: relative
@@ -110,13 +111,14 @@ body
                 height: auto
             &__text
                 position: absolute
-                bottom: 140px
+                top: 400px
                 left: 45px
                 color: white
                 z-index: 10
 
             &__title
                 font-size: 3.125rem //50px
+                margin-bottom:0
 
             &__small
                 font-size: 1.125rem
@@ -136,7 +138,7 @@ body
 
         .slide1-button
             position: absolute
-            bottom: 26px // Положение кнопки, выходящей за пределы слайда
+            top: 650px // Положение кнопки, выходящей за пределы слайда
             right: 100px
             z-index: 10
 
@@ -198,6 +200,7 @@ body
 
             .img-right
                 margin-left: 30px
+                max-width: 100%
 
             //Адрес и кнопка
             &__down
@@ -218,110 +221,81 @@ body
             &__text1
                 margin-top: 25px
                 font-size: 36px
+                margin-bottom: 0
 
             &__text2
                 font-size: 36px
+                margin-bottom: 0
 
             &__text3
                 font-size: 1.125rem
                 font-weight: 400
+                margin-bottom: 0
 
             .down__button
-                margin-top: -20px
+                margin-top: -26px
                 padding: 22px 118px
                 font-size: 1.625rem //26px
 
+        .slide3__img
+            max-width: 100%
+
 //Секция о нас
-.about
-    max-height: 822px
+.about 
+    display: grid
     max-width: 1440px
-    margin: 67px auto
+    max-height: 812px
+    grid-template-columns: auto auto
+    margin: 0 auto
+    gap: 25px
 
-    &__wrapper
-        display: flex
-        justify-content: center
 
-    &__left
+    &__column-1
+        display: grid
+        gap: 25px
         max-width: 961px
-        margin-right: 25px
 
-    &__description
-        padding-left: 51px
-        padding-top: 48px
-        padding-right: 15px
-        border: 2px
-        box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
-        border-radius: 10px
-        margin-bottom: 25px
-        background-color: white
-        height: 390px
+    &__row-1left 
+        padding: 60px 50px
+        max-height: 436px
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
 
-    &__large
-        width: 100%
-        object-fit: cover
+        h1 
+            margin-bottom: 20px 
 
-    &__title
-        font-size: 3.125rem //50px
-        margin-bottom: 28px
+        p 
+            margin-bottom: 20px
 
-    &__p
-        font-size: 1.25rem //20px
-        margin-bottom: 28px
-        &:last-child
-            margin-bottom: 0
+    &__row-2left
+        max-height: 351px
 
-    &__des-image
-        height: auto
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
-    &__right
-        display: flex
-        flex-direction: column
+    &__column-2 
+        display: grid
+        max-width: 367px
         gap: 25px
 
-    &__upImg
-        height: auto
+    &__row-1right
+        max-height: 317px
 
-    &__downImg
-        height: auto
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        
 
-.info
-    background-color: white
-    box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
-    border-radius: 18px
-    width: 1360px
-    height: 385px
-    margin-bottom: 2rem
-    &__text_card
-        width: 675px
-        height: 283px
-        padding: 10px
-        margin-left: 15px
-    &__title
-        font-size: 3.12rem
-        color: rgba(67, 67, 67, 1)
-        margin-bottom: 2rem
-    &__text
-        font-size: 1.25rem
+    &__row-2right
+        max-height: 470px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
-    &__picture
-        width: 573px
-        height: 385px
-        padding-right: 0px
 
-    &__wrapper
-        margin-bottom: 2.7rem
-    &__item
-        background-color: $white
-        border-radius: 0.9rem
-        filter: drop-shadow(0px 14px 60px rgba(0, 0, 0, 0.07))
-        max-width: 437px
-        height: auto
-        padding: 1.9rem 2rem 2.4rem 2rem
-
-    img
-        width: 100%
-        height: 385px
-        border-radius: 18px
 
 p
     font-size: 1.25rem
@@ -333,6 +307,32 @@ h3
     line-height: 1.28
     letter-spacing: 0.02
 
+//как отдохнуть
+    .info
+    box-shadow: 0px 20px 40px 10px rgb(237, 237, 237)
+    border-radius: 18px
+    max-width: 1360px
+    max-height: 385px
+    margin-bottom: 2rem
+    overflow: hidden
+    
+    &__title
+        font-size: 3.12rem
+        color: rgba(67, 67, 67, 1)
+        margin-bottom: 2rem
+
+    &__description
+        padding: 30px 30px
+    &__text
+        font-size: 1.25rem
+        font-weight: 500
+    
+    &__image
+        width: 100%
+        object-fit: cover
+        
+
+    //Клиенты о нас
 .reviews
     &__title
         font-size: 3rem
@@ -686,6 +686,8 @@ video
             margin-top: 34px
             right: calc((669px - 156px)/2)
 
+
+    
 .footer
     margin-right: auto
     margin-left: auto
@@ -741,6 +743,9 @@ li
             right: calc((100% - 156px)/2)
 
 @media screen and (max-width: 1199px)   // l //
+    .slide2__img-right //слайд2
+        opacity: 0
+    
     .reviews
         &__title
             font-size: 2.5rem
@@ -786,8 +791,18 @@ li
         margin-bottom: 25px
 
 @media screen and (max-width: 991px)   // m //
+    //Секция о нас
+    .about__row-1left
+        padding: 15px 10px
+    
+    .info__description
+        padding: 10px 10px
+    .info__text
+        font-size: 1rem
+        font-weight: 500
+    
     p
-        font-size: 1.1rem
+        font-size: 1.1rem // чей это р? 
     .reviews
         &__wrapper
             margin-bottom: 1.3rem
@@ -853,6 +868,42 @@ li
         height: 352px
 
 @media screen and (max-width: 767px)   // sm //
+    .slide1
+        &__text
+            font-size: 1.2rem
+
+    //слайд 2
+    .slide2
+        &__bottom
+            display: flex
+
+        &__images-block
+            
+            .img-left
+                display: none
+                
+            .img-right
+                display: none
+        &__down
+            align-items: flex-start
+            margin-left: 15% 
+
+        &__description
+            padding: 0 0
+            left: -90px
+
+        &__text1
+            font-size: 20px
+
+        &__text2
+            font-size: 36px
+
+        .down__button
+            margin-right: 200px
+//секция о нас
+    .about
+        &__column-2 
+            display: none
     .roadmap
         position: static
         border-radius: 20px 20px 0px 0px
